@@ -1,0 +1,37 @@
+
+let addareaschema=require('../model/addarea.Schema')
+let createarea=async(req,res)=>{
+   try {
+    let {area}=req.body;
+    let addarea=await  addareaschema.create({
+       area
+    })
+    return res.status(200).json({success:true,message:"add area successfully",addarea})
+   } catch (error) {
+    return res.status(200).json({success:false,error:error.message})
+
+   }            
+
+}
+let getallareadata=async(req,res)=>{
+    try {
+        let getdata=await  addareaschema.find()
+        res.status(200).json({
+            data:getdata,
+            success:true,
+            error:true,
+            message:"Receive all data",
+
+
+        })
+    } catch (error) {
+        res.status(400).json({
+            success:false.valueOf,error:error.message
+        })
+    }
+}
+module.exports={
+    createarea,
+    getallareadata
+    
+}

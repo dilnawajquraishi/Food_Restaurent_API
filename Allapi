@@ -1,0 +1,24 @@
+    ADD AREA 
+ADD_AREA=  http://localhost:6000/addarea
+
+ADD_AREA_GET_ALLL_DATA=http://localhost:6000/getalladdarea
+
+ADD CITY AND STATE
+ ADD_ CITY_STATE=http://localhost:6000/selectdeliveryarea
+ ADD_CITY_AND_STATE_GET_ALL_DATA= http://localhost:6000/getalldeliverydata
+
+ NEW_ORDER
+ NEW_ORDER=http://localhost:6000/neworder
+ NEW_ORDER_ GET_ALL_DATA=http://localhost:6000/newordergealldata
+
+   ONGOING_ORDER_
+ONGOING_ORDER_=http://localhost:6000/ongoing
+ONGOING_ORDER_GET_ALL_DATA=http://localhost:6000/ongoingalldata
+
+ONGOING_PAST_ORDER
+ONGOING_PAST_ORDER=ONGOING_PAST_ORDER
+ONGOING_PAST_ORDER_GET_ALL_DATA=http://localhost:6000/ongoingalldata
+
+
+REGISTER_API=http://localhost:6000/register
+LOGIN_API=http://localhost:6000/login
